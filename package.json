@@ -1,0 +1,42 @@
+{
+  "name": "pdf-ocr",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "format": "eslint --fix './src/**/*.{ts,tsx}'",
+    "deploy": "gh-pages -d dist/",
+    "predeploy": "pnpm build"
+  },
+  "dependencies": {
+    "clipboard-copy": "4.0.1",
+    "pdfjs-dist": "3.2.146",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "recoil": "0.7.6",
+    "styled-components": "5.3.6",
+    "tesseract.js": "4.0.2"
+  },
+  "devDependencies": {
+    "@types/pdfjs-dist": "2.10.378",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "@types/styled-components": "5.1.26",
+    "@typescript-eslint/eslint-plugin": "5.48.1",
+    "@typescript-eslint/parser": "5.48.1",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "eslint": "8.31.0",
+    "eslint-config-prettier": "8.6.0",
+    "eslint-plugin-react": "7.32.0",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "gh-pages": "4.0.0",
+    "prettier": "2.8.2",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0",
+    "vite-plugin-static-copy": "0.13.0",
+    "vite-plugin-svgr": "2.4.0"
+  }
+}
